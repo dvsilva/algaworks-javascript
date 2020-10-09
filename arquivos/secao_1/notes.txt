@@ -1,0 +1,30 @@
+introdução ao JavaScript
+- roda no browser
+- javascript não é java mas é parecido na sintaxe
+- é interpretado / baseado em prototipos e não em classe
+- tipagem fraca e dinamica (mais flexibilidade) mas erros só aparecem durante execução
+- versão 5 mais usada / 6 ainda não esta sendo utilizada pelos browsers ??
+
+ferramentas
+- node
+- homebrew para instalar o node (MAC)
+	- brew info node
+	- brew tap homebrew/versions
+	- brew search node
+	- brew install homebrew/versions/node4-lts
+- sublime
+	- para executar pelo sublime -> tools / build system / new build system
+	- colar configuração e salvar node.sublime-build em .../Packages/User
+	- executar -> tools / build ou control + B (para sair esc)
+
+- conteudo do node.sublime-build 
+{
+   "cmd": ["node", "$file"],
+   "selector": "source.js",
+   "working_dir": "${project_path:${folder}}",
+   "path": "C:\\Program Files\\nodejs",
+   "windows" : {
+     "shell": true
+   }
+}
+
